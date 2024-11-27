@@ -1,0 +1,36 @@
+{
+  "name": "facerecoginition",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "npm-run-all --parallel start:dev:*",
+    "start:dev:server": "nodemon index.js",
+    "start:dev:client": "cd client && npm start",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.64",
+    "@tensorflow/tfjs-node": "^4.22.0",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "face-api.js": "^0.22.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.2",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
+    "copy-webpack-plugin": "^12.0.2",
+    "react-refresh": "^0.14.2"
+  }
+}
